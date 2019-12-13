@@ -1,6 +1,6 @@
 <app-header [navbarBrandRouterLink]="['/dashboard']" [fixed]="true" [sidebarToggler]="'lg'" [asideMenuToggler]="'lg'">
   <ul class="nav navbar-nav d-md-down-none">
-    <li class="nav-item px-3">
+    <!-- <li class="nav-item px-3">
       <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
     </li>
     <div *ngIf="role == 'admin' && user else orther">
@@ -12,14 +12,14 @@
         <li class="nav-item px-3">
           <a class="nav-link" [routerLink]="['', role, 'create']">Users</a>
         </li>
-      </ng-template>
+      </ng-template> -->
       <!-- <li class="nav-item px-3">
           <a class="nav-link" [routerLink]="['/user', 'edit']" [queryParams]="{role: role}">UserTest</a>
         </li>
         <li class="nav-item px-3">
           <a class="nav-link" [routerLink]="['/admin', 'edit']" [queryParams]="{role: role}">AdminTest</a>
         </li> -->
-    <li class="nav-item px-3">
+    <!-- <li class="nav-item px-3">
       <a class="nav-link" [routerLink]="['/theater']">Theater</a>
     </li>
     <li class="nav-item px-3">
@@ -30,10 +30,10 @@
       <div *ngIf="!role">
         <a class="nav-link" [routerLink]="['/login']">Login</a>
       </div>
-    </li>
+    </li> -->
   </ul>
   <ul class="nav navbar-nav ml-auto">
-    <li class="nav-item d-md-down-none">
+    <!-- <li class="nav-item d-md-down-none">
       <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
     </li>
     <li class="nav-item d-md-down-none">
@@ -72,7 +72,7 @@
         <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock account</a>
         <a class="dropdown-item" [routerLink]="['/']" (click)="logOut()"><i class="fa fa-lock"></i>Logout</a>
       </div>
-    </li>
+    </li> -->
   </ul>
 </app-header>
 <div class="app-body">
@@ -88,9 +88,9 @@
       <!-- Breadcrumb Menu-->
       <li class="breadcrumb-menu d-md-down-none">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <!-- <a class="btn" href="#"><i class="icon-speech"></i></a>
           <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-          <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+          <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a> -->
         </div>
       </li>
     </cui-breadcrumb>
