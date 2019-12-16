@@ -17,9 +17,6 @@ export class LayoutComponent implements OnDestroy, OnInit {
   myInterval: number | false = 2000;
   slides: any[] = [];
   image: any[] = [
-    `https://www.cgv.vn/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980_11.jpg`,
-    `https://www.cgv.vn/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/s/p/spiderman_sneak_980_x_448_1.jpg`,
-    `https://www.cgv.vn/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/h/e/he_ca_tinh_980x448.jpg`,
   ];
   activeSlideIndex: number = 0;
   noWrapSlides: boolean = false;

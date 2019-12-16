@@ -10,6 +10,7 @@ import { AuthGuardAdminService } from './Services/auth-guard-admin.service';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { AdminComponent } from './Entites/user/admin/admin.component';
 import { AuthGuardUserService } from './Services/auth-guard-user.service';
+import { StockComponent } from './Entites/stock/stock.component';
 
 const routes: Routes = [
 
@@ -28,7 +29,10 @@ const routes: Routes = [
         path: 'admin/:action', component: UserComponent, canActivate: [AuthGuardAdminService],
         data : { title: 'admin' }
       },
-     
+      {
+        path: 'stock',
+        component: StockComponent,
+      },
     ]
   },
   {
@@ -39,6 +43,8 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent,
   },
+  
+
   {
     path: 'pagenotfound', component: PageNotFoundComponent
   },
